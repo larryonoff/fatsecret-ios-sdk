@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCC5C63D20EA206C005FC026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5C63C20EA206C005FC026 /* AppDelegate.swift */; };
+		CCC5C63F20EA206C005FC026 /* FoodPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5C63E20EA206C005FC026 /* FoodPickerViewController.swift */; };
+		CCC5C64220EA206C005FC026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC5C64020EA206C005FC026 /* Main.storyboard */; };
+		CCC5C64420EA206D005FC026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC5C64320EA206D005FC026 /* Assets.xcassets */; };
+		CCC5C64720EA206D005FC026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC5C64520EA206D005FC026 /* LaunchScreen.storyboard */; };
+		CCC5C65B20EA20B0005FC026 /* FatSecretSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5C65320EA2083005FC026 /* FatSecretSDK.framework */; };
+		CCC5C65F20EA21BD005FC026 /* FoodPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5C65E20EA21BD005FC026 /* FoodPickerCell.swift */; };
+		CCC5C67420EA2BF4005FC026 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5C67320EA2BF4005FC026 /* FoodViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCC5C65220EA2083005FC026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC5C64E20EA2083005FC026 /* FatSecretSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CCC5C5D820E8D065005FC026;
+			remoteInfo = FatSecretSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCC5C63920EA206C005FC026 /* FatSecretSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FatSecretSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC5C63C20EA206C005FC026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCC5C63E20EA206C005FC026 /* FoodPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerViewController.swift; sourceTree = "<group>"; };
+		CCC5C64120EA206C005FC026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCC5C64320EA206D005FC026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCC5C64620EA206D005FC026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCC5C64820EA206D005FC026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC5C64E20EA2083005FC026 /* FatSecretSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FatSecretSDK.xcodeproj; path = ../FatSecretSDK.xcodeproj; sourceTree = "<group>"; };
+		CCC5C65C20EA20B9005FC026 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC5C65E20EA21BD005FC026 /* FoodPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerCell.swift; sourceTree = "<group>"; };
+		CCC5C67320EA2BF4005FC026 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCC5C63620EA206C005FC026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC5C65B20EA20B0005FC026 /* FatSecretSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCC5C63020EA206C005FC026 = {
+			isa = PBXGroup;
+			children = (
+				CCC5C64E20EA2083005FC026 /* FatSecretSDK.xcodeproj */,
+				CCC5C63B20EA206C005FC026 /* Sources */,
+				CCC5C67220EA2BBE005FC026 /* Resources */,
+				CCC5C63A20EA206C005FC026 /* Products */,
+				CCC5C65A20EA20B0005FC026 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCC5C63A20EA206C005FC026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5C63920EA206C005FC026 /* FatSecretSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCC5C63B20EA206C005FC026 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5C63C20EA206C005FC026 /* AppDelegate.swift */,
+				CCC5C65E20EA21BD005FC026 /* FoodPickerCell.swift */,
+				CCC5C63E20EA206C005FC026 /* FoodPickerViewController.swift */,
+				CCC5C67320EA2BF4005FC026 /* FoodViewController.swift */,
+				CCC5C64820EA206D005FC026 /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CCC5C64F20EA2083005FC026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5C65320EA2083005FC026 /* FatSecretSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCC5C65A20EA20B0005FC026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5C65C20EA20B9005FC026 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCC5C67220EA2BBE005FC026 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5C64320EA206D005FC026 /* Assets.xcassets */,
+				CCC5C64520EA206D005FC026 /* LaunchScreen.storyboard */,
+				CCC5C64020EA206C005FC026 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCC5C63820EA206C005FC026 /* FatSecretSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCC5C64B20EA206D005FC026 /* Build configuration list for PBXNativeTarget "FatSecretSample" */;
+			buildPhases = (
+				CCC5C63520EA206C005FC026 /* Sources */,
+				CCC5C63620EA206C005FC026 /* Frameworks */,
+				CCC5C63720EA206C005FC026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FatSecretSample;
+			productName = FatSecretSampleApp;
+			productReference = CCC5C63920EA206C005FC026 /* FatSecretSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCC5C63120EA206C005FC026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = larryonoff;
+				TargetAttributes = {
+					CCC5C63820EA206C005FC026 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CCC5C63420EA206C005FC026 /* Build configuration list for PBXProject "FatSecretSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCC5C63020EA206C005FC026;
+			productRefGroup = CCC5C63A20EA206C005FC026 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CCC5C64F20EA2083005FC026 /* Products */;
+					ProjectRef = CCC5C64E20EA2083005FC026 /* FatSecretSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CCC5C63820EA206C005FC026 /* FatSecretSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CCC5C65320EA2083005FC026 /* FatSecretSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FatSecretSDK.framework;
+			remoteRef = CCC5C65220EA2083005FC026 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCC5C63720EA206C005FC026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC5C64720EA206D005FC026 /* LaunchScreen.storyboard in Resources */,
+				CCC5C64420EA206D005FC026 /* Assets.xcassets in Resources */,
+				CCC5C64220EA206C005FC026 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCC5C63520EA206C005FC026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC5C63F20EA206C005FC026 /* FoodPickerViewController.swift in Sources */,
+				CCC5C65F20EA21BD005FC026 /* FoodPickerCell.swift in Sources */,
+				CCC5C67420EA2BF4005FC026 /* FoodViewController.swift in Sources */,
+				CCC5C63D20EA206C005FC026 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CCC5C64020EA206C005FC026 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCC5C64120EA206C005FC026 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCC5C64520EA206D005FC026 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCC5C64620EA206D005FC026 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCC5C64920EA206D005FC026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCC5C64A20EA206D005FC026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCC5C64C20EA206D005FC026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.larryonoff.FatSecretSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCC5C64D20EA206D005FC026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.larryonoff.FatSecretSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCC5C63420EA206C005FC026 /* Build configuration list for PBXProject "FatSecretSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC5C64920EA206D005FC026 /* Debug */,
+				CCC5C64A20EA206D005FC026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCC5C64B20EA206D005FC026 /* Build configuration list for PBXNativeTarget "FatSecretSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC5C64C20EA206D005FC026 /* Debug */,
+				CCC5C64D20EA206D005FC026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCC5C63120EA206C005FC026 /* Project object */;
+}

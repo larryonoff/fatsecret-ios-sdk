@@ -1,0 +1,2 @@
+github "antitypical/Result" ~> 3.2
+github "OAuthSwift/OAuthSwift" ~> 1.2
