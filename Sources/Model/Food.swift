@@ -24,13 +24,25 @@ public struct Food: Decodable, Equatable {
         case brand = "Brand"
     }
 
+    // the unique food identifier
     public let id: Id
+
+    // the name of the food, not including the brand name. E.G.: "Instant Oatmeal"
     public let name: String
+
+    // takes the value "Brand" or "Generic". Indicates whether the food is a brand or generic item
     public let foodType: FoodType
+
+    // the brand name, only when food_type is "Brand". E.G.: "Quaker"
     public let brandName: String?
+
+    // URL of this food item on www.fatsecret.com
     public let url: URL?
+
+    // a summary description of key nutritional values for a nominated serving size
     public let foodDescription: String?
 
+    // detailed nutritional information for each available standard serving size
     public let servings: [Serving]?
 
     // MARK: - Decodable

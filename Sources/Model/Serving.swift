@@ -15,41 +15,82 @@ struct _Serving: Decodable {
 public struct Serving: Decodable, Equatable {
     public typealias Id = String
 
+    // the unique serving identifier
     public let id: Id
+
+    // URL of the serving size for this food item on www.fatsecret.com
     public let url: URL?
+
+    // the full description of the serving size. E.G.: "1 cup" or "100 g"
     public let servingDescription: String
 
+    // the metric quantity combined with metric_serving_unit to derive the total standardized quantity of the serving (where available)
     public let metricServingAmount: Double
+
+    // the metric unit of measure for the serving size – either "g" or "ml" or "oz" – combined with metric_serving_amount to derive the total standardized quantity of the serving (where available)
     public let metricServingUnit: String
 
+    // the number of units in this standard serving size. For instance, if the serving description is "2 tablespoons" the number of units is "2", while if the serving size is "1 cup" the number of units is "1"
     public let unitsCount: Double
 
+    // a description of the unit of measure used in the serving description. For instance, if the description is "1/2 cup" the measurement description is "cup", while if the serving size is "100 g" the measurement description is "g"
     public let measurementDescription: String
 
     // Macronutrients
 
+    // the energy content in kcal
     public let calories: Double
+
+    // the total carbohydrate content in grams
     public let carbohydrates: Double
+
+    // the cholesterol content in milligrams (where available)
     public let cholesterol: Double?
+
+    // the total fat content in grams
     public let fatTotal: Double
+
+    // the monounsaturated fat content in grams (where available)
     public let fatMonounsaturated: Double?
+
+    // the polyunsaturated fat content in grams (where available)
     public let fatPolyunsaturated: Double?
+
+    // the saturated fat content in grams (where available)
     public let fatSaturated: Double?
+
+    // the trans fat content in grams (where available)
     public let fatTrans: Double?
+
+    // the fiber content in grams (where available)
     public let fiber: Double?
+
+    // the protein content in grams
     public let protein: Double
+
+    // the sugar content in grams (where available)
     public let sugar: Double?
 
     // Micronutrients minerals
 
+    // the percentage of daily recommended Calcium, based on a 2000 calorie diet (where available)
     public let calcium: Int?
+
+    // the percentage of daily recommended Iron, based on a 2000 calorie diet (where available)
     public let iron: Int?
+
+    // the potassium content in milligrams (where available)
     public let potassium: Double?
+
+    // the sodium content in milligrams (where available)
     public let sodium: Double?
 
     // Micronutrients vitamins
 
+    // the percentage of daily recommended Vitamin A, based on a 2000 calorie diet (where available)
     public let vitaminA: Int?
+
+    // the percentage of daily recommended Vitamin C, based on a 2000 calorie diet (where available)
     public let vitaminC: Int?
 
     // MARK: - Decodable
