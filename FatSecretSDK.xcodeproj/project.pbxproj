@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCA257AB20EE0A1300D3D7E6 /* Serving+Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA257AA20EE0A1300D3D7E6 /* Serving+Measurement.swift */; };
+		CCA257BB20EE0A6400D3D7E6 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA257BA20EE0A6400D3D7E6 /* Measurements.swift */; };
 		CCC5C5E720E8D0E7005FC026 /* FatSecret.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC5C5E420E8D0E7005FC026 /* FatSecret.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCC5C5EB20E8D3C1005FC026 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5C5EA20E8D3C1005FC026 /* Food.swift */; };
 		CCC5C5ED20E8D8DB005FC026 /* FatSecretClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5C5EC20E8D8DB005FC026 /* FatSecretClient.swift */; };
@@ -120,6 +122,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CCA257AA20EE0A1300D3D7E6 /* Serving+Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Serving+Measurement.swift"; sourceTree = "<group>"; };
+		CCA257BA20EE0A6400D3D7E6 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 		CCC5C5D820E8D065005FC026 /* FatSecretSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FatSecretSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC5C5E420E8D0E7005FC026 /* FatSecret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatSecret.h; sourceTree = "<group>"; };
 		CCC5C5E620E8D0E7005FC026 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				CCC5C66020EA256F005FC026 /* FoodSearchResponse.swift */,
 				CCC5C5EA20E8D3C1005FC026 /* Food.swift */,
 				CCC5C5F120E8DBD0005FC026 /* Serving.swift */,
+				CCA257AA20EE0A1300D3D7E6 /* Serving+Measurement.swift */,
+				CCA257BA20EE0A6400D3D7E6 /* Measurements.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -413,6 +419,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC5C66120EA256F005FC026 /* FoodSearchResponse.swift in Sources */,
+				CCA257AB20EE0A1300D3D7E6 /* Serving+Measurement.swift in Sources */,
+				CCA257BB20EE0A6400D3D7E6 /* Measurements.swift in Sources */,
 				CCC5C60F20E94804005FC026 /* FatSecretError.swift in Sources */,
 				CCC5C5F220E8DBD0005FC026 /* Serving.swift in Sources */,
 				CCC5C5EB20E8D3C1005FC026 /* Food.swift in Sources */,
