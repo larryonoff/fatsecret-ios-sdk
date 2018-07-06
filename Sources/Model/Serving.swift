@@ -25,10 +25,10 @@ public struct Serving: Decodable, Equatable {
     public let servingDescription: String
 
     // the metric quantity combined with metric_serving_unit to derive the total standardized quantity of the serving (where available)
-    public let metricServingAmount: Double
+    public let metricServingAmount: Double?
 
     // the metric unit of measure for the serving size – either "g" or "ml" or "oz" – combined with metric_serving_amount to derive the total standardized quantity of the serving (where available)
-    public let metricServingUnit: String
+    public let metricServingUnit: String?
 
     // the number of units in this standard serving size. For instance, if the serving description is "2 tablespoons" the number of units is "2", while if the serving size is "1 cup" the number of units is "1"
     public let unitsCount: Double
@@ -134,9 +134,9 @@ public struct Serving: Decodable, Equatable {
         url = try container.decodeIfPresent(URL.self, forKey: .servingURL)
         servingDescription = try container.decode(String.self, forKey: .servingDescription)
 
-        let metricServingAmountString = try container.decode(String.self, forKey: .metricServingAmount)
-        metricServingAmount = Double(metricServingAmountString) ?? 0
-        metricServingUnit = try container.decode(String.self, forKey: .metricServingUnit)
+        let metricServingAmountString = try container.decodeIfPresent(String.self, forKey: .metricServingAmount)
+        metricServingAmount = metricServingAmountString.flatMap { Double($0) }
+        metricServingUnit = try container.decodeIfPresent(String.self, forKey: .metricServingUnit)
 
         let unitsCountString = try container.decode(String.self, forKey: .numberOfUnits)
         unitsCount = Double(unitsCountString) ?? 0
