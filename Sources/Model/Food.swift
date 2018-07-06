@@ -12,10 +12,6 @@ struct _Food: Decodable {
     let food: Food
 }
 
-struct _FoodServings: Decodable {
-    let serving: [Serving]
-}
-
 public struct Food: Decodable, Equatable {
     public typealias Id = String
 
@@ -68,7 +64,44 @@ public struct Food: Decodable, Equatable {
         foodDescription = try container.decodeIfPresent(String.self, forKey: .foodDescription)
 
         let _serving = try container
-            .decodeIfPresent(_FoodServings.self, forKey: .servings)
-        servings = _serving?.serving
+            .decodeIfPresent(_Servings.self, forKey: .servings)
+        servings = _serving?.serving?.servings
+    }
+}
+
+// Internal
+
+private struct _Servings: Decodable {
+    let serving: _ServingsSingleOrArray?
+}
+
+private struct _ServingsSingleOrArray: Decodable {
+
+    let servings: [Serving]?
+
+    // MARK: - Decodable
+
+    public init(from decoder: Decoder) throws {
+
+        do {
+            var container = try decoder.unkeyedContainer()
+            var servings: [Serving] = []
+            while !container.isAtEnd {
+                let serving = try container.decode(Serving.self)
+                servings.append(serving)
+            }
+
+            self.servings = !servings.isEmpty ? servings : nil
+        } catch let DecodingError.typeMismatch(type, _) where type == [Any].self {
+            do {
+                let container = try decoder.singleValueContainer()
+                let serving = try container.decode(Serving.self)
+                servings = [serving]
+            } catch {
+                throw error
+            }
+        } catch {
+            throw error
+        }
     }
 }
