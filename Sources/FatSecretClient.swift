@@ -56,7 +56,7 @@ open class FatSecretClient {
 
     public func food(
         with foodId: Food.Id,
-        flagDefaultServing: Bool = true,
+        flagDefaultServing: Bool = false,
         completion: @escaping (Result<Food, FatSecretError>) -> Void) {
 
         performRequest(
