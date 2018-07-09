@@ -36,6 +36,10 @@ public struct Serving: Decodable, Equatable {
     // a description of the unit of measure used in the serving description. For instance, if the description is "1/2 cup" the measurement description is "cup", while if the serving size is "100 g" the measurement description is "g"
     public let measurementDescription: String
 
+    // (Commercial Clients Only)
+    // flags the servings as the default serving (the suggested or most commonly chosen option)
+    public let isDefault: Bool
+
     // Macronutrients
 
     // the energy content in kcal
@@ -106,6 +110,8 @@ public struct Serving: Decodable, Equatable {
 
         case measurementDescription
 
+        case isDefault
+
         case calories
         case carbohydrates = "carbohydrate"
         case cholesterol
@@ -142,6 +148,9 @@ public struct Serving: Decodable, Equatable {
         unitsCount = Double(unitsCountString) ?? 0
 
         measurementDescription = try container.decode(String.self, forKey: .measurementDescription)
+
+        let isDefaultString = try container.decodeIfPresent(String.self, forKey: .isDefault)
+        isDefault = isDefaultString != nil
 
         // Nutrients
 

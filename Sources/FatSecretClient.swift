@@ -56,12 +56,14 @@ open class FatSecretClient {
 
     public func food(
         with foodId: Food.Id,
+        flagDefaultServing: Bool = true,
         completion: @escaping (Result<Food, FatSecretError>) -> Void) {
 
         performRequest(
             withMethod: FatSecretTarget.foodGet.rawValue,
             parameters: [
-                "food_id": foodId
+                "food_id": foodId,
+                "flag_default_serving": "\(flagDefaultServing)"
             ],
             completion: { [decoder = self.defaultDecoder] result in
                 let convertedResult = result
