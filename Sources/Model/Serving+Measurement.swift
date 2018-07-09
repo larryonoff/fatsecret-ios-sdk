@@ -14,7 +14,27 @@ extension Serving {
     }
 }
 
+// MARK: Nutrients
+
 extension Measurements where Base == Serving {
+
+    // Units
+
+    public var baseEnergyUnit: UnitEnergy {
+        return .kilocalories
+    }
+
+    public var baseMassUnit: UnitMass {
+        switch base.metricServingUnit {
+        case "g", "ml":
+            return .grams
+        case "oz":
+            return .ounces
+        default:
+            return .grams
+        }
+    }
+
     // Macronutrients
 
     // the energy content in kcal
