@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.ios.dependency 'Result', '~> 3.2'
+  s.ios.dependency 'Result', '~> 4.0'
   s.ios.dependency 'OAuthSwift', '~> 1.2'
 end
